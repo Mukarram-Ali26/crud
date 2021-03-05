@@ -10,7 +10,7 @@ exports.handler = async () => {
     var result = await client.query(
 
       q.Map(
-        q.Paginate(q.Documents(q.Collection("todos"))),
+        q.Paginate(q.Documents(q.Collection("crud"))),
          q.Lambda(x => q.Get(x))
          )
     )

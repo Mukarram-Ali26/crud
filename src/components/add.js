@@ -32,23 +32,15 @@ const Add = () => {
             <Field
               as={TextField}
               variant="outlined"
-              fullWidth="false"
+              // fullWidth="false"
               name="message"
               label="Your Text"
             />
             <br />
             <ErrorMessage name="message" />
-            <div style={{ marginTop: "10px" }}>
-              
-              <Button
-                variant="contained"
-                type="submit"
-                color="primary"
-                component="span"
-              >
-                Upload
-              </Button>
-            </div>
+            <div style={{ marginTop: '10px' }} >
+                <Button type='submit' variant='outlined' >upload</Button>
+              </div>
           </Form>
         )}
       </Formik>

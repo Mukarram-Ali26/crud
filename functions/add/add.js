@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
 
     const result = await client.query(
       q.Create(
-        q.Collection('todos'),
+        q.Collection('crud'),
         { data: { detail: messageBody.message  } },
       )
     )

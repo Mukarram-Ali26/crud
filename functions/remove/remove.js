@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
 
     const result = await client.query(
       q.Delete(
-        q.Ref(q.Collection('todos'), messageBody.id)
+        q.Ref(q.Collection('crud'), messageBody.id)
       )
     )
 

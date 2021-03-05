@@ -13,7 +13,7 @@ exports.handler = async (event) => {
     var result = await client.query(
 
       q.Update(
-          q.Ref(q.Collection("todos") , messageBody.id), {
+          q.Ref(q.Collection("crud") , messageBody.id), {
             data : {
               detail : messageBody.message,
             }
